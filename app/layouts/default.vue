@@ -1,28 +1,33 @@
-<script></script>
+<script setup lang="ts">
+</script>
 
 <template>
-  <div>
+  <div class="page-root">
   <header>
     <ul class="header-contents">
-      <li><a href="#">NEWS</a></li>
-      <li><a href="#">プロフィール</a></li>
-      <li><a href="#">SNS</a></li>
-      <li><a href="#">質問はこちらから！</a></li>
+      <li><a href="/news">NEWS</a></li>
+      <li><a href="/profile">プロフィール</a></li>
+      <li><a href="/SNS">SNS</a></li>
+      <li><a href="/faq">質問はこちらから！</a></li>
     </ul>
   </header>
    <main>
     <slot />
    </main>
+   <footer>
+
+   </footer>
   </div>
 </template>
 
 <style scoped>
 header{
-  background-color: aquamarine;
+  background-color: rgb(4, 116, 78);
 }
 
 li{
   list-style:none;
+  margin-left: 80px;
 }
 
 ul{
@@ -31,5 +36,11 @@ ul{
 
 .header-contents{
   display: flex;
+  margin-left: 30px;
+}
+
+.header-contents a{
+  text-decoration: none;
+  color:aliceblue;
 }
 </style>
